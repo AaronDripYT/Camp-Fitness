@@ -607,4 +607,8 @@ img{
     .section1 .holder{
         margin-top: -30vw;
     }
+
+    .section1{
+        height: 100vh;
+    }
 }
