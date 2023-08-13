@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Fitness - Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="shortcut icon" href="../vectors/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="left">
+                <div class="header">
+                    <div onclick="window.location.href='../index.html';" class="logo">
+                        <img src="../vectors/logo.svg">
+                        <h1><span>Camp</span> Fitness</h1>
+                    </div>
+                </div>
+                <div class="imagery">
+                    <img src="../vectors/registerPage.svg">
+                </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <h1>Registration</h1>
+                    <h2>Sign up today and become our newest camper!</h2>
+                </div>
+                <div class="bottom">
+                    <div class="cells">
+                        <div>
+                            <h1>Full Name</h1>
+                            <h2></h2>
+                            <input id="1984" onchange="return nameCheck(this)" type="text" placeholder="Enter your name...">
+                        </div>
+                        <div>
+                            <h1>Email Address</h1>
+                            <h2></h2>
+                            <input id="2307" onchange="return emailCheck(this)" type="text" placeholder="Enter your student email...">
+                        </div>
+                        <div>
+                            <h1>Parent/Guardian Number 1</h1>
+                            <h2></h2>
+                            <input id="6232" onchange="return numberCheck(this)" type="text" maxlength="19" placeholder="Enter their phone number...">
+                        </div>
+                        <div>
+                            <h1>Parent/Guardian Number 2 <span>&#40;Optional&#41;</span></h1>
+                            <h2></h2>
+                            <input id="5841" onchange="return numberCheck(this)" type="text" maxlength="19" placeholder="Enter their phone number...">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button onclick="return btnClick(this)" id="register">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="holder">
+                <h1>Contact Us</h1>
+                <h2>Open school hours | <span onclick="navigator.clipboard.writeText(''); navigator.clipboard.writeText(this.innerHTML); alert('Phone number copied.')">+1 (246) 367-8180</span> | <a target="_blank" href="mailto:alleyne@mes.gov.bb">alleyne@mes.gov.bb</a></h2>
+            </div>
+        </div>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+</html>
