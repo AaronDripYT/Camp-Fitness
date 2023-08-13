@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Fitness</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./vectors/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body>
+    <div class="main">
+        <section class="section1">
+            <div class="header">
+                <div onclick="window.location.href='./index.html';" class="logo">
+                    <img src="./vectors/logo.svg">
+                    <h1><span>Camp</span> Fitness</h1>
+                </div>
+                <div class="buttons">
+                    <h1 id="activities_header">Activities</h1>
+                    <h1 id="testimonials_header">Testimonials</h1>
+                    <h1 id="gallery_header">Gallery</h1>
+                    <h1 onclick="window.location.href='./html/register.html';" id="register_header">Register</h1>
+                    <span onchange="return onScreenChanged(btn)" onclick="return menu(this)" class="material-symbols-rounded">menu</span>
+                </div>
+                <div></div>
+                <div id="menu" class="menu">
+                    <div class="tooltip"></div>
+                    <h1 id="activities_header">Activities</h1>
+                    <h1 id="testimonials_header">Testimonials</h1>
+                    <h1 id="gallery_header">Gallery</h1>
+                    <h1 onclick="window.location.href='./html/register.html';" id="register_header">Register</h1>
+                </div>
+            </div>
+            <div class="holder">
+                <h1>Camp Fitness</h1>
+                <h2>“An adventure a day keeps the doctor away!”</h2>
+                <div class="buttons">
+                    <h3 onclick="window.location.href='#about';">Learn more</h3>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section2">
+            <div class="holder">
+                <h1>About Us</h1>
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptates aliquam delectus nisi! Corrupti iure voluptas molestiae assumenda corporis quod exercitationem! Amet quasi molestiae ut ea, repellat repellendus omnis suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error commodi voluptatem autem perspiciatis ducimus fugiat voluptas cum nulla, consequuntur aperiam nobis ad accusantium itaque cupiditate ipsum rerum delectus minima optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tenetur commodi ex earum officia beatae! Neque cum numquam eos iusto quas, ipsum odit accusamus aliquam quos eaque at dolp...</h2>
+                <!-- <h3 onclick="window.location.href='./html/about.html';">Read more</h3> -->
+            </div>
+        </section>
+        <section id="activities" class="section3">
+            <div class="holder">
+                <div class="text">
+                    <h1>What We Offer</h1>
+                    <h2>Lorem ipsum, <span>dolor sit amet</span> consectetur adipisicing elit. Illum voluptates aliquam delectus nisi! Corrupti iure voluptas molestiae assumenda corporis quod exercitationem! Amet quasi molestiae ut ea, <span>repellat repellendus omnis</span> suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error commodi voluptatem autem perspiciatis ducimus fugiat voluptas cum nulla, consequuntur aperiam nobis ad accusantium itaque cupiditate ipsum rerum delectus minima optio? Lorem ipsum dolor sit amet <span>consectetur adipisicing elit</span>. Voluptatum tenetur commodi ex earum officia beatae! Neque cum numquam eos iusto quas, ipsum odit accusamus aliquam quos eaque at dolp...</h2>
+                    <h3 onclick="window.location.href='./html/about.html';">Read more</h3>
+                </div>
+                <div class="imagery">
+                    <img src="./vectors/section3.svg">
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="section4">
+            <div class="holder">
+                <div class="imagery">
+                    <img src="./vectors/section4.svg">
+                </div>
+                <div class="text">
+                    <h1>Testimonials</h1>
+                    <h2>See what our guests are saying!</h2>
+                    <h3 onclick="window.location.href='./html/about.html';">View</h3>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="holder">
+                <h1>Contact Us</h1>
+                <h2>Open school hours | <span onclick="navigator.clipboard.writeText(''); navigator.clipboard.writeText(this.innerHTML); alert('Phone number copied.')">+1 (246) 367-8180</span> | <a target="_blank" href="mailto:alleyne@mes.gov.bb">alleyne@mes.gov.bb</a></h2>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
