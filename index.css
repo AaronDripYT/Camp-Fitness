@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    --color1: #4c9c59;
+    --color2: #55b465;
+    --color3: #498654;
+    --color4: #63c674;
+    --color5: #95f4a5;
+    --text1: #cee5d5;
+    --text2: #fdca40;
+    --clear_btn: rgba(255, 255, 255, 0.25);
+    --clear_btn_hover: rgba(255, 255, 255, 0.15);
+    --grey: #7b7b7b;
+}
+
+*{
+    margin: 0;
+    font-family: 'Poppins';
+    color: var(--text1);
+    padding: 0;
+    scroll-behavior: smooth !important;
+    transition: 0.25s;
+    color: var(--text1);
+}
+
+.material-symbols-rounded{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' -25,
+    'opsz' 48
+}
+
+img{
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.header{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: max-content;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: max-content;
+}
+
+.header .logo h1{
+    font-size: 2.5rem;
+    font-family: 'Fjalla One';
+    letter-spacing: 0.15rem;
+}
+
+.header .logo h1 span{
+    color: var(--color5);
+    font-family: 'Fjalla One';
+}
+
+.header .logo img{
+    aspect-ratio: 1/1;
+    height: 5rem;
+    margin-right: 0.5rem;
+}
+
+.header .buttons{
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header .buttons h1{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.header .buttons h1:hover{
+    cursor: pointer;
+    color: var(--color5);
+}
+
+.section1{
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)), url(../vectors/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.section1 .holder{
+    margin-top: -10vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .holder h1{
+    width: max-content;
+    margin: auto;
+    font-size: 7rem;
+    color: var(--text1);
+    margin-bottom: -0.5rem;
+    background: -webkit-linear-gradient(0deg, var(--color5), var(--text1), var(--color5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section1 .holder h2{
+    font-size: 1.5rem;
+    color: var(--text1);
+    font-weight: 400;
+}
+
+.section1 .holder .buttons{
+    gap: 0.75rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.section1 .holder .buttons h3{
+    cursor: pointer;
+    background: var(--clear_btn);
+    color: var(--text1);
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 400;
+}
+
+.section1 .holder .buttons h3:hover{
+    box-shadow: inset 8em 0 0 0 var(--clear_btn_hover);
+}
+
+.section2{
+    background: var(--color1);
+    padding: 3rem;
+    text-align: center;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+}
+
+.section2 h1{
+    color: var(--color5);
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    -webkit-text-decoration: var(--color3) solid underline;
+    text-decoration: var(--color3) solid underline;
+    -webkit-text-underline-position: under;
+    text-underline-position: under;
+}
+
+.section2 h2{
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 80rem;
+}
+
+.section2 h2 span{
+    color: var(--color5);
+    font-weight: 600;
+}
+
+.section2 h3{
+    cursor: pointer;
+    background: var(--text1);
+    color: var(--color1);
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    width: max-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.section2 h3:hover{
+    box-shadow: inset 8em 0 0 0 var(--color3);
+    color: var(--text1);
+}
+
+.section3{
+    background: var(--text1);
+    padding: 3rem;
+    text-align: center;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+}
+
+.section3 .holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section3 .text{
+    margin: auto;
+}
+
+.section3 .imagery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3 img{
+    aspect-ratio: 1/1;
+    height: 30rem;
+}
+
+.section3 h1{
+    color: var(--color1);
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    -webkit-text-decoration: transparent solid underline;
+    text-decoration: transparent solid underline;
+    -webkit-text-underline-position: under;
+    text-underline-position: under;
+}
+
+.section3 h2{
+    color: var(--grey);
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 80rem;
+}
+
+.section3 h2 span{
+    color: var(--color1);
+    font-weight: 600;
+}
+
+.section3 h3{
+    cursor: pointer;
+    background: var(--color1);
+    color: var(--text1);
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    width: max-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.section3 h3:hover{
+    box-shadow: inset 8em 0 0 0 var(--color4);
+    color: var(--text1);
+}
+
+.section4{
+    background: var(--color1);
+    padding: 3rem;
+    text-align: center;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+}
+
+.section4 .holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section4 .text{
+    margin: auto;
+}
+
+.section4 .imagery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4 img{
+    aspect-ratio: 1/1;
+    height: 30rem;
+}
+
+.section4 h1{
+    color: var(--color5);
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    -webkit-text-decoration: var(--color3) solid underline;
+    text-decoration: var(--color3) solid underline;
+    -webkit-text-underline-position: under;
+    text-underline-position: under;
+}
+
+.section4 h2{
+    color: var(--text1);
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 80rem;
+}
+
+.section4 h2 span{
+    color: var(--color5);
+    font-weight: 600;
+}
+
+.section4 h3{
+    cursor: pointer;
+    background: var(--text1);
+    color: var(--color1);
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    width: max-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.section4 h3:hover{
+    box-shadow: inset 5em 0 0 0 var(--color3);
+    color: var(--text1);
+}
+
+.footer{
+    padding: 3rem;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    background: var(--color3);
+}
+
+.footer .holder{
+    text-align: center;
+}
+
+.footer .holder h1{
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    -webkit-text-decoration: var(--color3) solid underline;
+    text-decoration: var(--color3) solid underline;
+    -webkit-text-underline-position: under;
+    text-underline-position: under;
+}
+
+.footer .holder h2{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.footer .holder h2 span{
+    cursor: pointer;
+}
+
+.footer .holder h2 a{
+    text-decoration: none;
+}
+
+.footer .holder h2 a:hover{
+    text-decoration: underline;
+}
+
+.header .buttons span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 6vw;
+    margin-right: 2vw;
+    display: none;
+}
+
+.header .buttons span:hover{
+    color: var(--color5);
+}
+
+.menu{
+    display: none;
+    margin-left: auto;
+    background-color: var(--clear_btn);
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    z-index: 100;
+    margin-top: -2vw;
+    position: absolute;
+    right: 0;
+    margin-top: 28vw;
+    margin-right: 2vw;
+    transform: scale(0.9);
+}
+
+.menu h1{
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.menu h1:hover{
+    cursor: pointer;
+    color: var(--color5);
+}
+  
+  
+.menu .tooltip{
+    width: 0;
+    height: 0;
+    border-left: 1vw solid transparent;
+    border-right: 1vw solid transparent;
+    border-bottom: 1vw solid var(--clear_btn);
+    position: absolute;
+    margin-top: -1.9vw;
+    transform: translateX(15.15vw);
+}
+
+/* ----- MOBILE VERSION ----- */
+
+@media only screen and (max-width: 850px){
+    .main{
+        font-size: 3vw;
+    }
+
+    .header .buttons h1{
+        display: none;
+    }
+
+    .header .buttons span{
+        display: block;
+    }
+    
+    .header{
+        padding: 2vw;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        height: max-content;
+    }
+    
+    .header .logo h1{
+        font-size: 6vw;
+        letter-spacing: 0.5vw;
+    }
+
+    .header .logo h1 span{
+        font-size: 6vw;
+    }
+    
+    .header .logo img{
+        height: 12vw;
+        margin-right: 1.5vw;
+    }
+    
+    .section1{
+        height: 125vh;
+    }
+    
+    .section1 .holder{
+        margin-top: 5vw;
+    }
+    
+    .section1 .holder h1{
+        font-size: 10vw;
+        margin-bottom: -1vw;
+    }
+    
+    .section1 .holder h2{
+        font-size: 3.5vw;
+    }
+    
+    .section1 .holder .buttons{
+        margin-top: 2vw;
+    }
+    
+    .section1 .holder .buttons h3{
+        font-size: 3vw;
+        padding: 2.5vw 4vw;
+        border-radius: 1vw;
+    }
+
+    .section1 .holder .buttons h3:hover{
+        box-shadow: inset 8.5em 0 0 0 var(--clear_btn_hover);
+    }
+    
+    .section2{
+        padding: 5vw;
+    }
+    
+    .section2 h1{
+        font-size: 5vw;
+        margin-bottom: 3vw;
+    }
+    
+    .section2 h2{
+        font-size: 3vw;
+        width: 100%;
+    }
+    
+    .section3{
+        padding: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .section3 .holder{
+        display: flex;
+        flex-flow: wrap-reverse;
+    }
+
+    .section3 .imagery{
+        margin: auto;
+        margin-bottom: 5vw;
+    }
+    
+    .section3 img{
+        height: 70vw;
+    }
+    
+    .section3 h1{
+        font-size: 5vw;
+        margin-bottom: 3vw;
+    }
+    
+    .section3 h2{
+        font-size: 3vw;
+        width: 100%;
+    }
+    
+    .section3 h3{
+        font-size: 3vw;
+        padding: 2.5vw 4vw;
+        border-radius: 1vw;
+        margin-top: 2vw;
+    }
+    
+    .section3 h3:hover{
+        box-shadow: inset 8.5em 0 0 0 var(--color4);
+    }
+    
+    .section4{
+        padding: 5vw;
+    }
+    
+    .section4 .holder{
+        display: flex;
+        flex-flow: wrap-reverse;
+    }
+
+    .section4 .imagery{
+        margin: auto;
+        margin-top: 5vw;
+    }
+    
+    .section4 img{
+        height: 70vw;
+    }
+    
+    .section4 h1{
+        font-size: 5vw;
+        margin-bottom: 3vw;
+    }
+    
+    .section4 h2{
+        font-size: 3vw;
+        width: 100%;
+    }
+    
+    .section4 h3{
+        font-size: 3vw;
+        padding: 2.5vw 4vw;
+        border-radius: 1vw;
+        margin-top: 2vw;
+    }
+    
+    .section4 h3:hover{
+        box-shadow: inset 5.25em 0 0 0 var(--color3);
+    }
+    
+    .footer{
+        padding: 5vw;
+    }
+    
+    .footer .holder{
+        text-align: center;
+    }
+    
+    .footer .holder h1{
+        font-size: 5vw;
+        margin-bottom: 1vw;
+    }
+    
+    .footer .holder h2{
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .section1 .holder{
+        margin-top: -30vw;
+    }
+}
