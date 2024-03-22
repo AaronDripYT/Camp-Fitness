@@ -12,25 +12,18 @@ function nameCheckFunction(input){
         input.style.color = 'var(--color1)';
         input.style.outline = null;
         nameCheck = 1;
-        console.log('-- name check 1 --');
-        console.log(nameCheck);
     } else{
         if (input.value == null || input.value == ''){
             txt.innerHTML = 'Please enter your name';
             input.style.outline = '0.1rem solid #DD2E44';
             nameCheck = 0;
-            console.log('-- name check 2 --');
-            console.log(nameCheck);
         } else{
             txt.innerHTML = 'Invalid name';
             input.style.outline = '0.1rem solid #DD2E44';
             input.style.color = '#DD2E44';
             nameCheck = 0;
-            console.log('-- name check 3 --');
-            console.log(nameCheck);
         }
     };
-    console.log(nameCheck + emailCheck + numCheck);
 
     if (nameCheck + emailCheck + numCheck === 3){
         btn.style.cursor = 'pointer';
@@ -62,8 +55,6 @@ function emailCheckFunction(input){
         }
     };
 
-    console.log(nameCheck + emailCheck + numCheck);
-
     if (nameCheck + emailCheck + numCheck === 3){
         btn.style.cursor = 'pointer';
         btn.style.opacity = '1';
@@ -93,8 +84,6 @@ function numCheckFunction(input){
             numCheck = 0;
         }
     };
-
-    console.log(nameCheck + emailCheck + numCheck);
 
     if (nameCheck + emailCheck + numCheck === 3){
         btn.style.cursor = 'pointer';
