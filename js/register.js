@@ -4,7 +4,7 @@ var numCheck = 0;
 var totalCheck = nameCheck + emailCheck + numCheck;
 var btn = document.getElementById('register');
 
-function nameCheck(input){
+function nameCheckFunction(input){
 
     window.log(nameCheck);
     
@@ -39,7 +39,7 @@ function nameCheck(input){
     };
 };
 
-function emailCheck(input){
+function emailCheckFunction(input){
     var emailCode = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     var txt = input.parentElement.getElementsByTagName('h2')[0]
     
@@ -71,7 +71,7 @@ function emailCheck(input){
     };
 };
 
-function numberCheck(input){
+function numCheckFunction(input){
     var numCode = /^[0-9\s+()\-]+$/;
     var txt = input.parentElement.getElementsByTagName('h2')[0]
 
@@ -103,7 +103,7 @@ function numberCheck(input){
     };
 };
 
-function btnClick(input){
+function btnClickFunction(input){
     if (totalCheck === 3){
         window.location.href = '../index.html';
     }
