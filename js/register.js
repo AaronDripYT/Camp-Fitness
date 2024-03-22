@@ -95,6 +95,7 @@ function numberCheck(input){
 };
 
 function btnClick(input){
+    alert(totalCheck);
     if (totalCheck === 3){
         window.location.href = '../index.html';
     }
