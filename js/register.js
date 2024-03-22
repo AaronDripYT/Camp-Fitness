@@ -5,9 +5,6 @@ var totalCheck = nameCheck + emailCheck + numCheck;
 var btn = document.getElementById('register');
 
 function nameCheckFunction(input){
-
-    window.log(nameCheck);
-    
     var nameCode = /^[a-zA-Z\s]+$/;
     var txt = input.parentElement.getElementsByTagName('h2')[0]
 
@@ -29,7 +26,7 @@ function nameCheckFunction(input){
         }
     };
 
-    window.log(nameCheck);
+    console.log(totalCheck);
 
     if (totalCheck === 3){
         btn.style.cursor = 'pointer';
@@ -61,7 +58,7 @@ function emailCheckFunction(input){
         }
     };
 
-    alert(totalCheck);
+    console.log(totalCheck);
 
     if (totalCheck === 3){
         btn.style.cursor = 'pointer';
@@ -93,7 +90,7 @@ function numCheckFunction(input){
         }
     };
 
-    alert(totalCheck);
+    console.log(totalCheck);
 
     if (totalCheck === 3){
         btn.style.cursor = 'pointer';
