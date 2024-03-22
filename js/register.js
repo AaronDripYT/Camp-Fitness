@@ -12,6 +12,8 @@ function nameCheckFunction(input){
         input.style.color = 'var(--color1)';
         input.style.outline = null;
         nameCheck = 1;
+        console.log('-- name check --');
+        console.log(nameCheck):
     } else{
         if (input.value == null || input.value == ''){
             txt.innerHTML = 'Please enter your name';
