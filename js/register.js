@@ -26,6 +26,8 @@ function nameCheck(input){
         }
     };
 
+    alert(totalCheck);
+
     if (totalCheck === 3){
         btn.style.cursor = 'pointer';
         btn.style.opacity = '1';
@@ -56,6 +58,8 @@ function emailCheck(input){
         }
     };
 
+    alert(totalCheck);
+
     if (totalCheck === 3){
         btn.style.cursor = 'pointer';
         btn.style.opacity = '1';
@@ -84,7 +88,9 @@ function numberCheck(input){
             input.style.color = '#DD2E44';
             numCheck = 0;
         }
-    }; 
+    };
+
+    alert(totalCheck);
 
     if (totalCheck === 3){
         btn.style.cursor = 'pointer';
@@ -95,7 +101,6 @@ function numberCheck(input){
 };
 
 function btnClick(input){
-    alert(totalCheck);
     if (totalCheck === 3){
         window.location.href = '../index.html';
     }
