@@ -1,5 +1,8 @@
-var checks = []
-var btn = document.getElementById('register')
+var nameCheck = 0;
+var emailCheck = 0;
+var numCheck = 0;
+var totalCheck = nameCheck + emailCheck + numCheck;
+var btn = document.getElementById('register');
 
 function nameCheck(input){
     var nameCode = /^[a-zA-Z\s]+$/;
@@ -9,22 +12,21 @@ function nameCheck(input){
         txt.innerHTML = '';
         input.style.color = 'var(--color1)';
         input.style.outline = null;
-        checks.push('name');
+        nameCheck = 1;
     } else{
         if (input.value == null || input.value == ''){
             txt.innerHTML = 'Please enter your name';
             input.style.outline = '0.1rem solid #DD2E44';
-            if (checks.indexOf(input.id) > -1) {
-                checks.splice(checks.indexOf(input.id), 1);
-            };
+            nameCheck = 0;
         } else{
             txt.innerHTML = 'Invalid name';
             input.style.outline = '0.1rem solid #DD2E44';
             input.style.color = '#DD2E44';
+            nameCheck = 0;
         }
     };
 
-    if (checks.length === 4){
+    if (totalCheck === 3){
         btn.style.cursor = 'pointer';
         btn.style.opacity = '1';
     } else{
@@ -40,22 +42,21 @@ function emailCheck(input){
         txt.innerHTML = '';
         input.style.color = 'var(--color1)';
         input.style.outline = null;
-        checks.push('email');
+        emailCheck = 1;
     } else{
         if (input.value == null || input.value == ''){
             txt.innerHTML = 'Please enter your email';
             input.style.outline = '0.1rem solid #DD2E44';
-            if (checks.indexOf(input.id) > -1) {
-                checks.splice(checks.indexOf(input.id), 1);
-            };
+            emailCheck = 0;
         } else{
             txt.innerHTML = 'Invalid email';
             input.style.outline = '0.1rem solid #DD2E44';
             input.style.color = '#DD2E44';
+            emailCheck = 0;
         }
     };
 
-    if (checks.length === 4){
+    if (totalCheck === 3){
         btn.style.cursor = 'pointer';
         btn.style.opacity = '1';
     } else{
@@ -71,22 +72,21 @@ function numberCheck(input){
         txt.innerHTML = '';
         input.style.color = 'var(--color1)';
         input.style.outline = null;
-        checks.push(input.id);
+        numCheck = 1;
     } else{
         if (input.value == null || input.value == ''){
             txt.innerHTML = 'Please a phone number';
             input.style.outline = '0.1rem solid #DD2E44';
-            if (checks.indexOf(input.id) > -1) {
-                checks.splice(checks.indexOf(input.id), 1);
-            };
+            numCheck = 0;
         } else{
             txt.innerHTML = 'Invalid number';
             input.style.outline = '0.1rem solid #DD2E44';
             input.style.color = '#DD2E44';
+            numCheck = 0;
         }
     }; 
 
-    if (checks.length === 4){
+    if (totalCheck === 3){
         btn.style.cursor = 'pointer';
         btn.style.opacity = '1';
     } else{
@@ -95,7 +95,7 @@ function numberCheck(input){
 };
 
 function btnClick(input){
-    if (checks.length === 4){
+    if (totalCheck === 3){
         window.location.href = '../index.html';
     }
 };
