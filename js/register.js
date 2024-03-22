@@ -6,7 +6,7 @@ var btn = document.getElementById('register');
 
 function nameCheck(input){
 
-    window.alert(nameCheck);
+    window.log(nameCheck);
     
     var nameCode = /^[a-zA-Z\s]+$/;
     var txt = input.parentElement.getElementsByTagName('h2')[0]
@@ -29,7 +29,7 @@ function nameCheck(input){
         }
     };
 
-    window.alert(nameCheck);
+    window.log(nameCheck);
 
     if (totalCheck === 3){
         btn.style.cursor = 'pointer';
