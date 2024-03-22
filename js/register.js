@@ -1,7 +1,6 @@
 var nameCheck = 0;
 var emailCheck = 0;
 var numCheck = 0;
-var totalCheck = nameCheck + emailCheck + numCheck;
 var btn = document.getElementById('register');
 
 function nameCheckFunction(input){
@@ -25,10 +24,9 @@ function nameCheckFunction(input){
             nameCheck = 0;
         }
     };
+    console.log(nameCheck + emailCheck + numCheck);
 
-    console.log(totalCheck);
-
-    if (totalCheck === 3){
+    if (nameCheck + emailCheck + numCheck === 3){
         btn.style.cursor = 'pointer';
         btn.style.opacity = '1';
     } else{
@@ -58,9 +56,9 @@ function emailCheckFunction(input){
         }
     };
 
-    console.log(totalCheck);
+    console.log(nameCheck + emailCheck + numCheck);
 
-    if (totalCheck === 3){
+    if (nameCheck + emailCheck + numCheck === 3){
         btn.style.cursor = 'pointer';
         btn.style.opacity = '1';
     } else{
@@ -90,9 +88,9 @@ function numCheckFunction(input){
         }
     };
 
-    console.log(totalCheck);
+    console.log(nameCheck + emailCheck + numCheck);
 
-    if (totalCheck === 3){
+    if (nameCheck + emailCheck + numCheck === 3){
         btn.style.cursor = 'pointer';
         btn.style.opacity = '1';
     } else{
@@ -101,7 +99,7 @@ function numCheckFunction(input){
 };
 
 function btnClickFunction(input){
-    if (totalCheck === 3){
+    if (nameCheck + emailCheck + numCheck === 3){
         window.location.href = '../index.html';
     }
 };
