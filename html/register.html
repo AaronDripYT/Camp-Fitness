@@ -29,28 +29,33 @@
                 <div class="bottom">
                     <div class="cells">
                         <div>
-                            <h1>Full Name</h1>
+                            <h1>First Name</h1>
                             <h2></h2>
-                            <input onchange="return nameCheckFunction(this)" type="text" placeholder="Enter your name...">
+                            <input id="firstName" onkeyup="return nameCheckFunction(this)" type="text" placeholder="Enter your first name...">
+                        </div>
+                        <div>
+                            <h1>Last Name</h1>
+                            <h2></h2>
+                            <input onkeyup="return nameCheckFunction(this)" type="text" placeholder="Enter your last name...">
                         </div>
                         <div>
                             <h1>Email Address</h1>
                             <h2></h2>
-                            <input onchange="return emailCheckFunction(this)" type="text" placeholder="Enter your student email...">
+                            <input onkeyup="return emailCheckFunction(this)" type="text" placeholder="Enter your student email...">
                         </div>
                         <div>
-                            <h1>Parent/Guardian Number 1</h1>
+                            <h1>Parent's Cell Number</h1>
                             <h2></h2>
-                            <input onchange="return numCheckFunction(this)" type="text" maxlength="19" placeholder="Enter their phone number...">
+                            <input id="num1" onkeyup="return numCheckFunction(this)" type="text" maxlength="8" placeholder="Enter their cell number...">
                         </div>
                         <div>
-                            <h1>Parent/Guardian Number 2 <span>&#40;Optional&#41;</span></h1>
+                            <h1>Parent's Work Number <span>&#40;Optional&#41;</span></h1>
                             <h2></h2>
-                            <input type="text" maxlength="19" placeholder="Enter their phone number...">
+                            <input id="num2" onkeyup="return numCheckFunction(this)" type="text" maxlength="8" placeholder="Enter their work number...">
                         </div>
                     </div>
                     <div class="btn">
-                        <button onclick="return btnClickFunction(this)" id="register">Sign Up</button>
+                        <button onclick="return btnClickFunction()" id="register">Sign Up</button>
                     </div>
                 </div>
             </div>
