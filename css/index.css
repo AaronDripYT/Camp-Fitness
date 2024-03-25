@@ -23,6 +23,10 @@ body{
     color: var(--text1);
 }
 
+b{
+    font-weight: 600;
+}
+
 .material-symbols-rounded{
     font-variation-settings:
     'FILL' 0,
@@ -199,7 +203,7 @@ img{
 
 .section3{
     background: var(--text1);
-    padding: 3rem;
+    padding: 1rem 3rem;
     text-align: center;
     font-family: 'Poppins';
     display: flex;
