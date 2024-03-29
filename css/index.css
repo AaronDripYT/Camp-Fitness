@@ -11,6 +11,7 @@ body{
     --clear_btn: rgba(255, 255, 255, 0.25);
     --clear_btn_hover: rgba(255, 255, 255, 0.15);
     --grey: #7b7b7b;
+    background-color: #4c9c59;
 }
 
 *{
@@ -50,11 +51,14 @@ img{
 }
 
 .header{
-    padding: 1rem;
+    padding: 0.25rem 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: max-content;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 2rem);
 }
 
 .header .logo{
@@ -65,7 +69,7 @@ img{
 }
 
 .header .logo h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Fjalla One';
     letter-spacing: 0.15rem;
 }
@@ -77,7 +81,7 @@ img{
 
 .header .logo img{
     aspect-ratio: 1/1;
-    height: 5rem;
+    height: 4rem;
     margin-right: 0.5rem;
 }
 
@@ -88,7 +92,7 @@ img{
 }
 
 .header .buttons h1{
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 400;
 }
 
@@ -104,21 +108,23 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.section1 .holder{
-    margin-top: -10vh;
-    text-align: center;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.section1 .holder{
+    /* margin-top: 16vh; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section1 .holder h1{
     width: max-content;
-    margin: auto;
-    font-size: 7rem;
+    margin-top: -2rem;
+    font-size: 5.5rem;
     color: var(--text1);
     margin-bottom: -0.5rem;
     background: -webkit-linear-gradient(0deg, var(--color5), var(--text1), var(--color5));
@@ -396,7 +402,7 @@ img{
     display: none;
     margin-left: auto;
     background-color: var(--clear_btn);
-    padding: 1vw 2vw;
+    padding: 1vw 1vw;
     border-radius: 1vw;
     z-index: 100;
     position: absolute;
@@ -404,16 +410,22 @@ img{
     margin-top: 35vw;
     margin-right: 2vw;
     transform: scale(0.9);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 }
 
 .menu h1{
     font-size: 4vw;
     font-weight: 400;
+    border-radius: 0.5vw;
+    padding: 0vw 0.5vw;
+    transition: 0s;
 }
 
 .menu h1:hover{
     cursor: pointer;
     color: var(--color5);
+    background: rgba(255, 255, 255, 0.2);
 }
   
   
@@ -444,10 +456,11 @@ img{
     }
     
     .header{
-        padding: 3vw;
+        padding: 1.5vw 3vw;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         height: max-content;
+        width: calc(100% - 6vw);
     }
     
     .header .logo h1{
@@ -478,7 +491,7 @@ img{
     }
     
     .section1 .holder h2{
-        font-size: 3.75vw;
+        font-size: 4vw;
     }
     
     .section1 .holder .buttons{
