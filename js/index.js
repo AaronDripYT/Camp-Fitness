@@ -5,7 +5,7 @@ window.addEventListener('load', (event) => {
     var menu = document.getElementById('menu');
     var footerTxt = document.getElementById('footerTxt');
 
-    if (width >= 850){
+    if (width > 850){
         menu.style.transform = 'scale(0.97)';
         menu.style.display = 'none';
         menu_clicked = false;
@@ -21,9 +21,15 @@ var header = document.getElementById('header');
 function headerScroll(){
   if (window.scrollY > header.offsetTop){
     header.style.background = 'var(--color3)';
+    if (window.innerWidth > 850){
+        header.style.borderBottom = '#427c4c solid 0.125rem';
+    } else{
+        header.style.borderBottom = '#427c4c solid 0.5vw';
+    }
     /* header.style.boxShadow = 'rgba(0, 0, 0, 0.4) 0 0 3rem'; */
   } else {
     header.style.background = 'none';
+    header.style.borderBottom = 'none';
     /* header.style.boxShadow = 'none'; */
   }
 }
@@ -47,7 +53,7 @@ function menu(btn){
 };
 
 window.addEventListener('resize', function (){
-    if (window.innerWidth >= 850) {
+    if (window.innerWidth > 850) {
         var menu = document.getElementById('menu');
         var footerTxt = document.getElementById('footerTxt');
 
