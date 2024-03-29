@@ -15,6 +15,19 @@ window.addEventListener('load', (event) => {
     }
 });
 
+window.onscroll = function(){headerScroll()};
+var header = document.getElementById('header');
+
+function headerScroll(){
+  if (window.scrollY > header.offsetTop){
+    header.style.background = 'var(--color3)';
+    /* header.style.boxShadow = 'rgba(0, 0, 0, 0.4) 0 0 3rem'; */
+  } else {
+    header.style.background = 'none';
+    /* header.style.boxShadow = 'none'; */
+  }
+}
+
 function menu(btn){
     var menu = document.getElementById('menu');
 
