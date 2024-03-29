@@ -5,12 +5,26 @@ var numCheck = 0;
 var btn = document.getElementById('register');
 
 window.addEventListener('load', (event) => {
-    // hello
+    if (width >= 850){
+        footerTxt.innerHTML = `Open school hours | <span onclick="navigator.clipboard.writeText(''); navigator.clipboard.writeText(this.innerHTML); alert('Phone number copied.')">+1 (246) 367-8180</span> | <a target="_blank" href="mailto:campfitness246@gmail.com">campfitness246@gmail.com</a>`;
+    } else{
+        footerTxt.innerHTML = `Open school hours | <span onclick="navigator.clipboard.writeText(''); navigator.clipboard.writeText(this.innerHTML); alert('Phone number copied.')">+1 (246) 367-8180</span>  <a target="_blank" href="mailto:campfitness246@gmail.com">campfitness246@gmail.com</a>`;
+    }
+});
+
+window.addEventListener('resize', function () {
+    if (window.innerWidth <= 850) {
+        var footerTxt = document.getElementById('footerTxt');
+        footerTxt.innerHTML = `Open school hours | <span onclick="navigator.clipboard.writeText(''); navigator.clipboard.writeText(this.innerHTML); alert('Phone number copied.')">+1 (246) 367-8180</span>  <a target="_blank" href="mailto:campfitness246@gmail.com">campfitness246@gmail.com</a>`;
+    } else{
+        var footerTxt = document.getElementById('footerTxt');
+        footerTxt.innerHTML = `Open school hours | <span onclick="navigator.clipboard.writeText(''); navigator.clipboard.writeText(this.innerHTML); alert('Phone number copied.')">+1 (246) 367-8180</span> | <a target="_blank" href="mailto:campfitness246@gmail.com">campfitness246@gmail.com</a>`;
+    }
 });
 
 function nameCheckFunction(input){
     var nameCode = /^[a-zA-Z\s]+$/;
-    var txt = input.parentElement.getElementsByTagName('h2')[0]
+    var txt = input.parentElement.getElementsByTagName('h2')[0];
     var firstName = document.getElementById('firstName');
 
     if (input.value.match(nameCode)){
@@ -57,7 +71,7 @@ function nameCheckFunction(input){
 function emailCheckFunction(input){
     input.value = input.value.toLowerCase();
     var emailCode = /^[a-z.-]{3,}[0-9]{4}@alleyne.edu.bb$/;
-    var txt = input.parentElement.getElementsByTagName('h2')[0]
+    var txt = input.parentElement.getElementsByTagName('h2')[0];
     
     if (input.value.match(emailCode)){
         txt.innerHTML = '';
@@ -89,7 +103,7 @@ function emailCheckFunction(input){
 function numCheckFunction(input){
     var num2 = document.getElementById('num2');
     var numCode = /^[0-9-]+$/;
-    var txt = input.parentElement.getElementsByTagName('h2')[0]
+    var txt = input.parentElement.getElementsByTagName('h2')[0];
 
     if (input.value.match(numCode)){
         txt.innerHTML = '';
@@ -97,8 +111,8 @@ function numCheckFunction(input){
         input.style.outline = null;
         var size = input.value.length;
         
-        if (size === 4) {input.value = input.value.slice(0, 3) + '-' + input.value.slice(3, 10)}
-        if (size === 9) {input.value = input.value.slice(0, 9) + '-'  + input.value.slice(9)}
+        if (size === 4) {input.value = input.value.slice(0, 3) + '-' + input.value.slice(3, 10);}
+        if (size === 9) {input.value = input.value.slice(0, 9) + '-'  + input.value.slice(9);}
 
         if (input.value.length === 8){
             if (input === num2){
