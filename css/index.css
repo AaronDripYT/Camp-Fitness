@@ -12,6 +12,7 @@ body{
     --clear_btn_hover: rgba(255, 255, 255, 0.15);
     --grey: #7b7b7b;
     background-color: #4c9c59;
+
 }
 
 *{
@@ -57,8 +58,10 @@ img{
     align-items: center;
     height: max-content;
     position: fixed;
-    top: 0;
+    bottom: 88.5vh;
+    height: max-content;
     width: calc(100% - 2rem);
+    position: -webkit-fixed;
 }
 
 .header .logo{
@@ -160,6 +163,7 @@ img{
 }
 
 .section2{
+    border-top: #427c4c solid 0.125rem;
     background: var(--color1);
     padding: 3rem;
     text-align: center;
@@ -208,6 +212,7 @@ img{
 }
 
 .section3{
+    border-top: #427c4c solid 0.125rem;
     background: var(--text1);
     padding: 1rem 3rem;
     text-align: center;
@@ -277,6 +282,7 @@ img{
 }
 
 .section4{
+    border-top: #427c4c solid 0.125rem;
     background: var(--color1);
     padding: 3rem;
     text-align: center;
@@ -346,6 +352,7 @@ img{
 }
 
 .footer{
+    border-top: #427c4c solid 0.125rem;
     padding: 3rem;
     font-family: 'Poppins';
     display: flex;
@@ -456,6 +463,7 @@ img{
     }
     
     .header{
+        border-bottom: #427c4c solid 0.5vw;
         padding: 1.5vw 3vw;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -479,6 +487,7 @@ img{
     
     .section1{
         height: 100vh;
+        
     }
     
     .section1 .holder{
@@ -510,6 +519,7 @@ img{
     
     .section2{
         padding: 5vw;
+        border-top: #427c4c solid 0.5vw;
     }
     
     .section2 h1{
@@ -523,6 +533,7 @@ img{
     }
     
     .section3{
+        border-top: #427c4c solid 0.5vw;
         padding: 5vw;
         display: flex;
         justify-content: center;
@@ -564,6 +575,7 @@ img{
     }
     
     .section4{
+        border-top: #427c4c solid 0.5vw;
         padding: 5vw;
     }
     
@@ -603,6 +615,7 @@ img{
     }
     
     .footer{
+        border-top: #427c4c solid 0.5vw;
         padding: 5vw;
     }
     
