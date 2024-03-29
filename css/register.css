@@ -71,7 +71,7 @@ img{
 }
 
 .header{
-    padding: 1rem;
+    padding: 0.25rem 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -87,7 +87,7 @@ img{
 }
 
 .header .logo h1{
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-family: 'Fjalla One';
     letter-spacing: 0.15rem;
 }
@@ -99,7 +99,7 @@ img{
 
 .header .logo img{
     aspect-ratio: 1/1;
-    height: 5rem;
+    height: 4.45rem;
     margin-right: 0.5rem;
 }
 
@@ -110,7 +110,7 @@ img{
 }
 
 .header .buttons h1{
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 400;
 }
 
@@ -253,4 +253,71 @@ img{
 
 .footer .holder h2 a:hover{
     text-decoration: underline;
+}
+
+/* ----- MOBILE VERSION ----- */
+
+@media only screen and (max-width: 850px){
+    
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header{
+        background: var(--color2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 0.35rem 0;
+        box-shadow: var(--color3) 0rem 0rem 10rem;
+    }
+
+    .header div h1{
+        font-size: 4vw;
+    }
+
+    .header div img{
+        height: 10vw;
+    }
+
+    .imagery{
+        background: yellow;
+        display: none;
+    }
+    
+    .imagery img{
+        width: 70vw;
+        aspect-ratio: 1/1;
+        background: red;
+        display: none;
+    }
+
+    .right{
+        margin: 0;
+        margin-top: 18vw;
+        width: 100vw;
+    }
+
+    .footer{
+        padding: 5vw;
+    }
+    
+    .footer .holder{
+        text-align: center;
+    }
+    
+    .footer .holder h1{
+        font-size: 6vw;
+        margin-bottom: 1vw;
+    }
+    
+    .footer .holder h2{
+        
+        width: 35ch;
+    }
 }
