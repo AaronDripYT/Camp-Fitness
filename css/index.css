@@ -353,7 +353,7 @@ img{
 }
 
 .footer{
-    border-top: #427c4c solid 0.125rem;
+    border-top: #427c4c solid 0.1rem;
     padding: 3rem;
     font-family: 'Poppins';
     display: flex;
@@ -614,7 +614,7 @@ img{
     }
     
     .footer{
-        border-top: #427c4c solid 0.5vw;
+        border-top: #427c4c solid 0.25vw;
         padding: 5vw;
     }
     
