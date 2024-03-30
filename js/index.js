@@ -19,19 +19,23 @@ var header = document.getElementById('header');
 window.onscroll = function(){headerScroll()};
 
 function headerScroll(){
-  if (window.scrollY > header.offsetTop){
-    header.style.background = 'var(--color3)';
-    if (window.innerWidth > 850){
-        header.style.borderBottom = '#427c4c solid 0.1rem';
-    } else{
-        header.style.borderBottom = '#427c4c solid 0.25vw';
+    var meta = document.querySelector('meta[name="theme-color"]');
+
+    if (window.scrollY > header.offsetTop){
+        meta.setAttribute("content", "#4c9c59");
+        header.style.background = 'var(--color3)';
+        if (window.innerWidth > 850){
+            header.style.borderBottom = '#427c4c solid 0.1rem';
+        } else {
+            header.style.borderBottom = '#427c4c solid 0.25vw';
+        }
+        /* header.style.boxShadow = 'rgba(0, 0, 0, 0.4) 0 0 3rem'; */
+    } else {
+        meta.setAttribute("content", "#5b98bf");
+        header.style.background = 'none';
+        header.style.borderBottom = 'none';
+        /* header.style.boxShadow = 'none'; */
     }
-    /* header.style.boxShadow = 'rgba(0, 0, 0, 0.4) 0 0 3rem'; */
-  } else {
-    header.style.background = 'none';
-    header.style.borderBottom = 'none';
-    /* header.style.boxShadow = 'none'; */
-  }
 }
 
 function menu(btn){
