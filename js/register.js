@@ -5,7 +5,7 @@ var numCheck = 0;
 var btn = document.getElementById('register');
 
 window.addEventListener('load', (event) => {
-    if (width >= 850){
+    if (window.innerWidth > 850){
         footerTxt.innerHTML = `Open school hours | <span onclick="navigator.clipboard.writeText(''); navigator.clipboard.writeText(this.innerHTML); alert('Phone number copied.')">+1 (246) 367-8180</span> | <a target="_blank" href="mailto:campfitness246@gmail.com">campfitness246@gmail.com</a>`;
     } else{
         footerTxt.innerHTML = `Open school hours | <span onclick="navigator.clipboard.writeText(''); navigator.clipboard.writeText(this.innerHTML); alert('Phone number copied.')">+1 (246) 367-8180</span>  <a target="_blank" href="mailto:campfitness246@gmail.com">campfitness246@gmail.com</a>`;
