@@ -12,19 +12,19 @@ window.addEventListener('load', (event) => {
         footerTxt.innerHTML = `Open school hours | <span onclick="navigator.clipboard.writeText(''); navigator.clipboard.writeText(this.innerHTML); alert('Phone number copied.')">+1 (246) 367-8180</span> | <a target="_blank" href="mailto:campfitness246@gmail.com">campfitness246@gmail.com</a>`;
     } else{
         footerTxt.innerHTML = `Open school hours | <span onclick="navigator.clipboard.writeText(''); navigator.clipboard.writeText(this.innerHTML); alert('Phone number copied.')">+1 (246) 367-8180</span>  <a target="_blank" href="mailto:campfitness246@gmail.com">campfitness246@gmail.com</a>`;
-    }
+        }
 });
 
-window.onscroll = function(){headerScroll()};
 var header = document.getElementById('header');
+window.onscroll = function(){headerScroll()};
 
 function headerScroll(){
   if (window.scrollY > header.offsetTop){
     header.style.background = 'var(--color3)';
     if (window.innerWidth > 850){
-        header.style.borderBottom = '#427c4c solid 0.125rem';
+        header.style.borderBottom = '#427c4c solid 0.1rem';
     } else{
-        header.style.borderBottom = '#427c4c solid 0.5vw';
+        header.style.borderBottom = '#427c4c solid 0.25vw';
     }
     /* header.style.boxShadow = 'rgba(0, 0, 0, 0.4) 0 0 3rem'; */
   } else {
