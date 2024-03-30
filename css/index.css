@@ -164,7 +164,7 @@ img{
 }
 
 .section2{
-    border-top: #427c4c solid 0.125rem;
+    border-top: #427c4c solid 0.1rem;
     background: var(--color1);
     padding: 3rem;
     text-align: center;
@@ -213,7 +213,7 @@ img{
 }
 
 .section3{
-    border-top: #427c4c solid 0.125rem;
+    border-top: #427c4c solid 0.1rem;
     background: var(--text1);
     padding: 1rem 3rem;
     text-align: center;
@@ -283,7 +283,7 @@ img{
 }
 
 .section4{
-    border-top: #427c4c solid 0.125rem;
+    border-top: #427c4c solid 0.1rem;
     background: var(--color1);
     padding: 3rem;
     text-align: center;
