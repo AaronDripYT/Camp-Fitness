@@ -53,15 +53,16 @@ img{
 
 .header{
     padding: 0.25rem 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-    height: max-content;
+    justify-content: center;
     position: fixed;
-    bottom: 88.5vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     height: max-content;
     width: calc(100% - 2rem);
-    position: -webkit-fixed;
 }
 
 .header .logo{
@@ -408,17 +409,20 @@ img{
 .menu{
     display: none;
     margin-left: auto;
-    background-color: var(--clear_btn);
+    background-color: rgba(0, 0, 0, 0.20);
     padding: 1vw 1vw;
     border-radius: 1vw;
-    z-index: 100;
+    /* border: var(--color5) solid 0.25vw; */
+    z-index: 1000;
     position: absolute;
+    left: 0;
     right: 0;
+    width: max-content;
     margin-top: 35vw;
     margin-right: 2vw;
     transform: scale(0.9);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 .menu h1{
@@ -432,7 +436,7 @@ img{
 .menu h1:hover{
     cursor: pointer;
     color: var(--color5);
-    background: rgba(255, 255, 255, 0.2);
+    background: #95f4a538;
 }
   
   
@@ -441,9 +445,9 @@ img{
     height: 0;
     border-left: 1.5vw solid transparent;
     border-right: 1.5vw solid transparent;
-    border-bottom: 1.5vw solid var(--clear_btn);
+    border-bottom: 1.5vw solid rgba(0, 0, 0, 0.2);
     position: absolute;
-    margin-top: -2.4vw;
+    margin-top: -2.3vw;
     transform: translateX(20vw);
 }
 
@@ -463,11 +467,7 @@ img{
     }
     
     .header{
-        border-bottom: #427c4c solid 0.5vw;
         padding: 1.5vw 3vw;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        height: max-content;
         width: calc(100% - 6vw);
     }
     
@@ -487,7 +487,6 @@ img{
     
     .section1{
         height: 100vh;
-        
     }
     
     .section1 .holder{
@@ -519,7 +518,7 @@ img{
     
     .section2{
         padding: 5vw;
-        border-top: #427c4c solid 0.5vw;
+        border-top: #427c4c solid 0.25vw;
     }
     
     .section2 h1{
@@ -533,7 +532,7 @@ img{
     }
     
     .section3{
-        border-top: #427c4c solid 0.5vw;
+        border-top: #427c4c solid 0.25vw;
         padding: 5vw;
         display: flex;
         justify-content: center;
@@ -575,7 +574,7 @@ img{
     }
     
     .section4{
-        border-top: #427c4c solid 0.5vw;
+        border-top: #427c4c solid 0.25vw;
         padding: 5vw;
     }
     
