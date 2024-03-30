@@ -266,7 +266,6 @@ img{
     }
 
     .header{
-        background: var(--color2);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -274,7 +273,8 @@ img{
         top: 0;
         width: 100%;
         padding: 0.35rem 0;
-        box-shadow: var(--color3) 0rem 0rem 10rem;
+        border-bottom: #427c4c solid 0.5vw;
+        background: var(--color3);
     }
 
     .header div h1{
