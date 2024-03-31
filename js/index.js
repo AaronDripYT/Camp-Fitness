@@ -22,7 +22,7 @@ function headerScroll(){
     var meta = document.querySelector('meta[name="theme-color"]');
 
     if (window.scrollY > header.offsetTop){
-        meta.setAttribute("content", "#4c9c59");
+        meta.setAttribute("content", "#498654");
         header.style.background = 'var(--color3)';
         if (window.innerWidth > 850){
             header.style.borderBottom = '#427c4c solid 0.1rem';
