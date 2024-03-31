@@ -18,10 +18,8 @@ body{
 *{
     margin: 0;
     font-family: 'Poppins';
-    color: var(--text1);
     padding: 0;
     scroll-behavior: smooth !important;
-    transition: 0.25s;
     color: var(--text1);
 }
 
@@ -49,6 +47,10 @@ img{
     width: 100%;
     font-size: 1.25rem;
     position: relative;
+}
+
+.main *{
+    transition: 0.25s;
 }
 
 .header{
