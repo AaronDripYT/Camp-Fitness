@@ -132,9 +132,7 @@ img{
     color: var(--text1);
     margin-bottom: -0.5rem;
     background: -webkit-linear-gradient(0deg, var(--color5), var(--text1), var(--color5));
-    background: linear-gradient(0deg, var(--color5), var(--text1), var(--color5));
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -179,8 +177,10 @@ img{
     color: var(--color5);
     font-size: 2.25rem;
     margin-bottom: 1.5rem;
-    -webkit-text-decoration: var(--color3) solid underline;
-    text-decoration: var(--color3) solid underline;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    text-decoration-color: var(--color3);
+    -webkit-text-decoration-color: var(--color3);
     -webkit-text-underline-position: under;
     text-underline-position: under;
 }
@@ -248,8 +248,10 @@ img{
     color: var(--color1);
     font-size: 2.25rem;
     margin-bottom: 1rem;
-    -webkit-text-decoration: var(--color1) solid underline;
-    text-decoration: var(--color1) solid underline;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    text-decoration-color: #427c4c;
+    -webkit-text-decoration-color: #427c4c;
     -webkit-text-underline-position: under;
     text-underline-position: under;
 }
@@ -318,8 +320,10 @@ img{
     color: var(--color5);
     font-size: 2.25rem;
     margin-bottom: 0.5rem;
-    -webkit-text-decoration: var(--color3) solid underline;
-    text-decoration: var(--color3) solid underline;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    text-decoration-color: var(--color3);
+    -webkit-text-decoration-color: var(--color3);
     -webkit-text-underline-position: under;
     text-underline-position: under;
 }
