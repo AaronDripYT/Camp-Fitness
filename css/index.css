@@ -132,6 +132,7 @@ img{
     color: var(--text1);
     margin-bottom: -0.5rem;
     background: -webkit-linear-gradient(0deg, var(--color5), var(--text1), var(--color5));
+    background: linear-gradient(0deg, var(--color5), var(--text1), var(--color5));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
